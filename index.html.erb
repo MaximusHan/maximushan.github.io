@@ -1,0 +1,32 @@
+<%= render partial: 'layouts/navigation_header_v2' %>
+<%= render partial: 'homepage/homepage_header_v2' %>
+
+<section class="bg-primary" id="homepage-about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h2 class="section-heading" style='line-height: 1.2;font-family: "Open Sans", Helvetica, Arial, sans-serif;'>WHAT WE OFFER</h2>
+        <hr id="homepage-hr-light">
+        <p class="text-faded" style='margin-bottom: 60px;font-family: "Open Sans", Helvetica, Arial, sans-serif;'>Save on all those expensive InMails! Easily find primary emails of top talent who are more likely to respond when you can reach them in their main inbox! The free Chrome Extension will reveal a person's email from their Github profile. Enjoy access at no cost. Results guaranteed!</p>
+        <center>
+          <img id='hikido-plugin-gif' src=<%= image_url('hikido1.2.3.gif') %> height="550" width="900">
+        </center>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render partial: 'homepage/client_listing' %>
+<%= render partial: 'homepage/competitors_section' %>
+<%= render partial: 'homepage/homepage_services' %>
+
+<aside class="bg-dark" style='margin-bottom:60px;'>
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>Free Access to 5.1 Million Emails Now!</h2>
+            <a id='homepage-get-started-btn' href='#/' onclick="if (!window.chrome) { alert('Sorry, Hikido is currently available for Chrome.'); } else {if (typeof ga !== 'undefined') { ga('send', 'event', 'chrome_plugin', 'clicked_from_homepage_bottom');} chrome.webstore.install();}return false;" class="btn btn-default btn-xl wow slideInUp" style='border-color:white;'><i class="fa fa-lg fa-plus"></i>&nbsp;&nbsp; Add to Chrome!</a>
+        </div>
+    </div>
+</aside>
+
+<%#= render partial: 'homepage/homepage_about' %>

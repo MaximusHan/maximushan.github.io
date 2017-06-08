@@ -1,0 +1,15 @@
+<% cache 'homepage_header' do %>
+  <header class='wow fadeIn' id='homepage-header'>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1 class='wow fadeIn' data-wow-delay="0.5s" style="font-size: 65px;font-weight:300;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">Reveal Github User Emails</h1>
+        <hr id='homepage-hr'>
+        <p class='wow fadeInDown' data-wow-delay="0.5s">Contact top-talent in their primary inboxes! Use our free Chrome extension to leverage a trove of <span style='font-weight:700;'>5.1 million emails</span> of engineers and developers!</p>
+        <a id='homepage-find-out-more' href='#/' onclick="if (!window.chrome) { alert('Sorry, Hikido is currently available for Chrome.'); } else {if (typeof ga !== 'undefined') { ga('send', 'event', 'chrome_plugin', 'clicked_from_homepage_top');}chrome.webstore.install();}return false;" class="btn btn-primary btn-xl page-scroll wow fadeInDown" data-wow-delay="0.5s">
+          <i class="fa fa-lg fa-cloud-download"></i>&nbsp;&nbsp;
+          Download for Free
+        </a>
+      </div>
+    </div>
+  </header>
+<% end %>
